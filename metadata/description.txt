@@ -1,4 +1,4 @@
-Food Quiz is an iPhone app for testing food and nutrition knowledge using real packaged products from the Open Food Facts database.
+Food Quiz Pro is an iPhone app for testing food and nutrition knowledge using real packaged products from the Open Food Facts database.
 
 • Play five game modes: Which Has More?, Guess the Country, Guess the Brand, Guess Calories, and Order by Calories
 • In Which Has More?, compare Protein, Calories, Fat, Carbohydrates, Sugar, or Fiber between two products
@@ -10,5 +10,6 @@ Food Quiz is an iPhone app for testing food and nutrition knowledge using real p
 • Search by name, brand, or barcode and open Product Details
 • Product Details shows Nutri-Score, NOVA, nutrition per 100g, ingredients, and allergens
 • First-launch onboarding can be skipped with Skip or completed with Continue and Get Started
+• Settings includes Contact Us
 
 Discover food facts and practice nutrition knowledge with real products.
