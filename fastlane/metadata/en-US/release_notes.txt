@@ -1,0 +1,10 @@
+Welcome to Food Quiz 1.0.
+
+This initial release includes:
+
+• Onboarding with four screens introducing games, scanning, and search
+• Games tab with Which Has More?, Guess the Country, Guess the Brand, Guess Calories, and Order by Calories
+• Scanner tab with Start Scanning, Choose from Gallery, and product lookup
+• Search tab to find products by name, brand, or barcode
+• Product Details with Nutri-Score, NOVA, nutrition per 100g, ingredients, and allergens
+• Product data and images from Open Food Facts

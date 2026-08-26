@@ -1,0 +1,14 @@
+Food Quiz is an iPhone app for testing food and nutrition knowledge using real packaged products from the Open Food Facts database.
+
+• Play five game modes: Which Has More?, Guess the Country, Guess the Brand, Guess Calories, and Order by Calories
+• In Which Has More?, compare Protein, Calories, Fat, Carbohydrates, Sugar, or Fiber between two products
+• In Guess the Country, identify a product's origin country from its image and name
+• In Guess the Brand, pick the correct brand from a product image
+• In Guess Calories, estimate kcal per 100g from multiple choices
+• In Order by Calories, drag four products into order from highest to lowest calories
+• Scan barcodes with the camera or Choose from Gallery to look up a product
+• Search by name, brand, or barcode and open Product Details
+• Product Details shows Nutri-Score, NOVA, nutrition per 100g, ingredients, and allergens
+• First-launch onboarding can be skipped with Skip or completed with Continue and Get Started
+
+Discover food facts and practice nutrition knowledge with real products.

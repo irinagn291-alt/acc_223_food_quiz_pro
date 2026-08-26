@@ -1,0 +1,1 @@
+Play five food quiz modes, scan barcodes, and search Open Food Facts for nutrition details, ingredients, allergens, and Nutri-Score.

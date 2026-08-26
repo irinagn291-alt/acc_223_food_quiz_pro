@@ -1,0 +1,1 @@
+food,nutrition,barcode,scanner,quiz,trivia,ingredients,allergens,nutriscore,calories,brand,country
