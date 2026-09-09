@@ -1,12 +1,12 @@
 import Foundation
 
-struct ProductResponse: Codable {
+nonisolated struct ProductResponse: Codable {
     let code: String?
     let product: ProductData?
     let status: Int?
 }
 
-struct ProductData: Codable {
+nonisolated struct ProductData: Codable {
     let product_name: String?
     let brands: String?
     let image_url: String?
@@ -21,7 +21,7 @@ struct ProductData: Codable {
     let nutriments: Nutriments?
 }
 
-struct Nutriments: Codable {
+nonisolated struct Nutriments: Codable {
     let energy_kcal_100g: Double?
     let energy_100g: Double?
     let proteins_100g: Double?
@@ -41,14 +41,14 @@ struct Nutriments: Codable {
     }
 }
 
-struct SearchResponse: Codable {
+nonisolated struct SearchResponse: Codable {
     let count: Int?
     let page: Int?
     let page_size: Int?
     let products: [SearchProductItem]?
 }
 
-struct SearchProductItem: Codable {
+nonisolated struct SearchProductItem: Codable {
     let code: String?
     let product_name: String?
     let brands: String?

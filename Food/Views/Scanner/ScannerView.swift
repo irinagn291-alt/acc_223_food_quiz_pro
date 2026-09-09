@@ -252,10 +252,10 @@ struct ScannerView: View {
 
 struct BarcodeScannerRepresentable: UIViewControllerRepresentable {
     @Binding var isRunning: Bool
-    let onScan: @MainActor (String) -> Void
+    let onScan: (String) -> Void
 
     func makeCoordinator() -> Coordinator {
-        Coordinator(onScan: onScan)
+        Coordinator(parent: self)
     }
 
     func makeUIViewController(context: Context) -> BarcodeScannerVC {
@@ -265,19 +265,20 @@ struct BarcodeScannerRepresentable: UIViewControllerRepresentable {
     }
 
     func updateUIViewController(_ uiViewController: BarcodeScannerVC, context: Context) {
+        context.coordinator.parent = self
         uiViewController.setRunning(isRunning)
     }
 
     @MainActor
     class Coordinator: NSObject, BarcodeScannerDelegate {
-        let onScan: @MainActor (String) -> Void
+        var parent: BarcodeScannerRepresentable
 
-        init(onScan: @escaping @MainActor (String) -> Void) {
-            self.onScan = onScan
+        init(parent: BarcodeScannerRepresentable) {
+            self.parent = parent
         }
 
         func didScanBarcode(_ code: String) {
-            onScan(code)
+            parent.onScan(code)
         }
     }
 }

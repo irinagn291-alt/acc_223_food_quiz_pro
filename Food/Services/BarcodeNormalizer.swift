@@ -1,6 +1,6 @@
 import Foundation
 
-enum BarcodeNormalizer {
+nonisolated enum BarcodeNormalizer {
     static func normalize(_ raw: String) -> String? {
         let digits = raw.filter(\.isNumber)
         guard !digits.isEmpty else { return nil }

@@ -1,6 +1,6 @@
 import Foundation
 
-struct Product: Identifiable, Codable, Hashable {
+nonisolated struct Product: Identifiable, Codable, Hashable {
     let id: String
     let name: String
     let brand: String?
@@ -86,7 +86,7 @@ struct Product: Identifiable, Codable, Hashable {
     }
 }
 
-struct NutritionFacts: Codable, Hashable {
+nonisolated struct NutritionFacts: Codable, Hashable {
     let calories: Double?
     let protein: Double?
     let fat: Double?

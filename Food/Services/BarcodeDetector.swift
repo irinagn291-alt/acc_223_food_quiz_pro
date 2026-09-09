@@ -2,7 +2,7 @@ import UIKit
 import Vision
 import CoreImage
 
-enum BarcodeDetector {
+nonisolated enum BarcodeDetector {
     static func detect(in image: UIImage) async -> String? {
         await Task.detached(priority: .userInitiated) {
             let variants = prepareVariants(from: image)
@@ -106,7 +106,7 @@ enum BarcodeDetector {
     }
 }
 
-private extension UIImage {
+nonisolated private extension UIImage {
     func normalized() -> UIImage {
         guard imageOrientation != .up else { return self }
         let renderer = UIGraphicsImageRenderer(size: size)
